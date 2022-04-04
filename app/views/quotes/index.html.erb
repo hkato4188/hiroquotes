@@ -1,3 +1,4 @@
+<!-- 
 <p style="color: green"><%= notice %></p>
 
 <h1>Quotes</h1>
@@ -12,3 +13,27 @@
 </div>
 
 <%= link_to "New quote", new_quote_path %>
+-->
+
+<div class="container">
+  <br>
+  <h3>A proverb is a short sentence based on long experience</h3>
+  <p><i> -- Miguel de Cervantes</i></p>
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4" id="quotes">
+  <% @quotes.each do |quote| %>
+    <div class="col card card-body"> 
+          <h5 class="card-title "><%= quote.author %> </h5>  
+            <p class="card-text"><%= quote.text %></p>
+            <p class="card-text">Genre: <%= quote.genre %></p>
+        <div class="card-footer"> 
+          <%= link_to "Show Quote", quote, class:"btn btn-secondary btn-sm"%>
+        </div>
+    </div>
+  <% end %>
+</div>
+
+
+

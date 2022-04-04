@@ -16,13 +16,19 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
   <body>
+    <div class="d-flex flex-column min-vh-100">
+      <%= render 'home/header'%>
 
-    <%= render 'home/header'%>
-
-    <div class="container">
-        <%= yield %>
+      <div class="container">
+          <%= yield %>
+      </div>
+      
+      <footer class="mt-auto">
+          <%= render 'home/footer'%>
+      </footer>
     </div>
-    
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
