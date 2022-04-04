@@ -22,17 +22,24 @@
 </div>
 
 
-<div class="row row-cols-1 row-cols-md-3 g-4" id="quotes">
-  <% @quotes.each do |quote| %>
-    <div class="col card card-body"> 
-          <h5 class="card-title "><%= quote.author %> </h5>  
-            <p class="card-text"><%= quote.text %></p>
-            <p class="card-text">Genre: <%= quote.genre %></p>
-        <div class="card-footer"> 
-          <%= link_to "Show Quote", quote, class:"btn btn-secondary btn-sm"%>
+  <div id="quotes">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <% @quotes.each do |quote| %>
+        <div class="col"> 
+          <div class="card">  
+            <div class="card-body">
+              <h5 class="card-title "><%= quote.author %> </h5>  
+                <p class="card-text"><%= quote.text %></p>
+                <p class="card-text">Genre: <%= quote.genre %></p>
+            </div>
+            <div class="card-footer">
+              
+              <%= link_to "Show Quote", quote, class:"btn btn-secondary btn-sm"%>
+            </div>
+          </div>
         </div>
-    </div>
-  <% end %>
+      <% end %>
+  </div>
 </div>
 
 
