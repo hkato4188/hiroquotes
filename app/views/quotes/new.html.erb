@@ -1,10 +1,16 @@
-<br>
-  <h3>
-    No one else sees the world the way you do, so no one else can tell the stories that you have to tell.
-  </h3>
-    <p>
-      <i>-Charles de Lint</i>
-    </p>
+
+<div class="container">
+  <br>
+    <figure class="text-end">
+        <blockquote class="blockquote">
+            <p>No one else sees the world the way you do, so no one else can tell the stories that you have to tell.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            <cite><i>Charles de Lint</i></cite>
+        </figcaption>
+    </figure> 
+</div>
+
     <%= render "form", quote: @quote %><br>
     <div>
       <%= link_to "Back to Quotes", quotes_path, class: "btn btn-sm btn-outline-secondary" %>
