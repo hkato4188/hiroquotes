@@ -1,9 +1,11 @@
-<h1>New quote</h1>
-
-<%= render "form", quote: @quote %>
-
 <br>
-
-<div>
-  <%= link_to "Back to quotes", quotes_path %>
-</div>
+  <h3>
+    No one else sees the world the way you do, so no one else can tell the stories that you have to tell.
+  </h3>
+    <p>
+      <i>-Charles de Lint</i>
+    </p>
+    <%= render "form", quote: @quote %><br>
+    <div>
+      <%= link_to "Back to Quotes", quotes_path, class: "btn btn-sm btn-outline-secondary" %>
+    </div>
