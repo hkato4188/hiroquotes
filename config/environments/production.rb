@@ -60,7 +60,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "hirocodes_production"
+  # config.active_job.queue_name_prefix = "hiroquotes_production"
 
   config.action_mailer.perform_caching = false
 
@@ -92,6 +92,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #Update once hosted on AWS
-  #config.action_mailer.default_url_options = { host: 'hirocodes.com', port: 3000 }
+  #config.action_mailer.default_url_options = { host: 'hiroquotes.com', port: 3000 }
 
 end
