@@ -23,8 +23,8 @@ class QuotesController < ApplicationController
 
   # POST /quotes or /quotes.json
   def create
-    @quote = Quote.new(quote_params)
-
+    #@quote = Quote.new(quote_params)
+    @quote = current_user.quotes.build(quote_params)
     respond_to do |format|
       if @quote.save
         format.html { redirect_to quote_url(@quote), notice: "Quote was successfully created." }
@@ -74,6 +74,6 @@ class QuotesController < ApplicationController
     #if params id does not match quote id then its set to nil and page gets redirected
     def correct_user
       @quote = current_user.quotes.find_by(id: params[:id])
-      redirect_to quotes_path, notice: "Not Authorized to Edit this Quote" if @quote.nil?
+      redirect_to quotes_path, notice: "You are not authorized to do this" if @quote.nil?
   end
 end

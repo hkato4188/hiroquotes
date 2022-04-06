@@ -9,10 +9,10 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/home/about">About Me</a>
         </li>
-        <% if user_signed_in? %>
-          <li class="nav-item">
+        <li class="nav-item">
             <%= link_to "Quotes", quotes_path, class: "nav-link"%>
           </li>
+        <% if user_signed_in? %>  
           <li class="nav-item">
             <%= link_to "Add Quote", new_quote_path, class: "nav-link"%>
           </li>
