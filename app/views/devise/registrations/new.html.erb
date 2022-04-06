@@ -14,15 +14,15 @@
   <%= render "devise/shared/error_messages", resource: resource %>
   <h3>Sign up:</h3>
   <div class="field form-group">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Please enter your email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Email address" %>
   </div>
   <br>
   <div class="field form-group">
-    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Please enter your new password (must be at least 6 characters)" %>
+    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Enter new password" %>
   </div>
   <br>
   <div class="field form-group">
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Please confirm your new password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirm new password" %>
   </div>
   <br>
   <div class="d-grid gap-1 d-md-flex justify-content-left actions">

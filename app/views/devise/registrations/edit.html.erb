@@ -7,7 +7,7 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field form-group">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Please enter your email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter your email" %>
   </div>
   <br>
 
@@ -16,17 +16,17 @@
   <% end %>
 
   <div class="field">
-    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Enter updated password or leave blank to keep" %>
+    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Enter updated password | leave blank to keep" %>
   </div>
 
   <div class="field">
     <br>
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirm updated password (must be at least 6 characters) " %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirm updated password" %>
   </div>
 
   <div class="field">
     <br>
-    <%= f.password_field :current_password, autocomplte: "current-password", class: "form-control", placeholder: "Please enter current password to authorize and confirm change" %>
+    <%= f.password_field :current_password, autocomplte: "current-password", class: "form-control", placeholder: "Enter current password to confirm" %>
   </div>
     <br>
   <div class="d-grid gap-1 d-md-flex justify-content-left actions">
