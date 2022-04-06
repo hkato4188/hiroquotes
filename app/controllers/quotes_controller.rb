@@ -69,4 +69,11 @@ class QuotesController < ApplicationController
     def quote_params
       params.require(:quote).permit(:author, :text, :genre, :user_id)
     end
+
+    #the correct user value is set if the current user's quotes have an id that matches the quote id in params 
+    #if params id does not match quote id then its set to nil and page gets redirected
+    def correct_user
+      @quote = current_user.quotes.find_by(id: params[:id])
+      redirect_to quotes_path, notice: "Not Authorized to Edit this Quote" if @quote.nil?
+  end
 end
