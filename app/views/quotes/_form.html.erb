@@ -25,8 +25,7 @@
 
 
   <div class="field form group">
-    <p><%= form.text_field :user_id, class:"form-control", placeholder: "USER ID" %></p>
-    <%= current_user.methods %>
+    <p><%= form.number_field :user_id, id: :quote_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
 
   <div class="actions">
