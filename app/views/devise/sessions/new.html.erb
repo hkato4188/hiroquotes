@@ -9,7 +9,7 @@
 </figure>  
 
 <div class="container">
-  <h3>Log in and Learn</h3>
+  <h3>Sign in:</h3>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field form-group">
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Please enter your email" %>
@@ -28,7 +28,7 @@
       <% end %>
       
       <div class="d-grid gap-1 d-md-flex justify-content-left actions">
-        <%= f.submit "Log in", class:"btn btn-sm btn-secondary" %>
+        <%= f.submit "Sign in", class:"btn btn-sm btn-secondary" %>
       </div>
     <% end %>
     <br>
