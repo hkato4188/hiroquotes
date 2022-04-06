@@ -1,6 +1,6 @@
-class AddUserIdToFriends < ActiveRecord::Migration[7.0]
+class AddUserIdToQuotes < ActiveRecord::Migration[7.0]
   def change
-    add_column :friends, :user_id, :integer
-    add_index :friends, :user_id
+    add_column :quotes, :user_id, :integer
+    add_index :quotes, :user_id
   end
 end
