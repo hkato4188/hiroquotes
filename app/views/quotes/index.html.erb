@@ -17,9 +17,9 @@
         <div class="col"> 
           <div class="card">  
             <div class="card-body">
-              <h5 class="card-title "><%= quote.author %> </h5>  
-                <p class="card-text"><%= quote.text %></p>
-                <p class="card-text">Genre: <%= quote.genre %></p>
+              <h5 class="card-header"><%= quote.author %> </h5>  
+                <h6 class="card-text"><br><%= quote.text %></h6>
+                <p class="card-text"><%= quote.genre %></p>
             </div>
             <div class="card-footer">
               <%= link_to "Show Quote", quote, class:"btn btn-secondary btn-sm"%>

@@ -12,12 +12,12 @@
   <h3>Sign in:</h3>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field form-group">
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Please enter your email" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter email" %>
       </div>
 
       <div class="field form-group">
         <br>
-        <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Please enter your current password" %>
+        <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Enter password" %>
       </div>
 
       <% if devise_mapping.rememberable? %>

@@ -16,12 +16,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Enter updated password | leave blank to keep" %>
+    <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Enter new password | leave blank to keep" %>
   </div>
 
   <div class="field">
     <br>
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirm updated password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirm new password" %>
   </div>
 
   <div class="field">
@@ -54,7 +54,7 @@
             Act as if what you do makes a difference. It does.
         </blockquote>
         <figcaption class="blockquote-footer">
-            <cite><i>Jean Jacques Rousseau</i></cite>
+            <cite><i>William James</i></cite>
         </figcaption>
         <%= button_to "Delete Account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
         
