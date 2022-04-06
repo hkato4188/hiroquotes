@@ -91,7 +91,6 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  #Update once hosted on AWS
-  #config.action_mailer.default_url_options = { host: 'hiroquotes.com', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'hiroquotes.herokuapp.com', port: 3000 }
 
 end
